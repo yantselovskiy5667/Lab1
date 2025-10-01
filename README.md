@@ -121,12 +121,12 @@ graph TD
     C -- Нет --> D{count}
     D -->Z([count])
     C -- Да --> I{x >= c}
-    I -- Нет --> J[count+1/]
+    I -- Нет --> J[count+1]
     I -- Да --> K{x >= b}
-    K -- Нет --> P[count+2/]
+    K -- Нет --> P[count+2]
     K -- Да --> S{x >= a}
-    S -- Нет --> T[count+3/]
-    S -- Да --> F[count+4/]
+    S -- Нет --> T[count+3]
+    S -- Да --> F[count+4]
     J --> Z
     P --> Z
     T --> Z
