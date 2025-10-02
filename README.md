@@ -158,18 +158,22 @@ public class Main {
         int c=in.nextInt();
         int d= in.nextInt();
         int count= 1;
+//проверяем каждый из условий, чтобы понять сколько доминошек упало
         if (x<d) {
             out.print(count);}
         else {
             if (x < c) {
-                out.print(count + 1);}
+                out.print(count + 1);
+            }
             else {
                 if (x < b) {
                     out.print(count + 2);
-                } else {
+                }
+                else {
                     if (x < a) {
                         out.print(count + 3);
-                    } else {
+                    }
+                    else {
                         out.print(count + 4);
                     }
                 }
