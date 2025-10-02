@@ -141,6 +141,7 @@ graph TD
 ```java
 
 
+
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -153,50 +154,29 @@ public class Main {
     public static void main(String[] args) {
         //вводим 5 переменных и счетчик через int
         int x= in.nextInt();
-        int a=in.nextInt();
-        int b=in.nextInt();
-        int c=in.nextInt();
+        int a= in.nextInt();
+        int b= in.nextInt();
+        int c= in.nextInt();
         int d= in.nextInt();
         int count= 1;
-//проверяем каждый из условий, чтобы понять сколько доминошек упало
         if (x<d) {
             out.print(count);}
         else {
-            if (x < c) {
+            if (x < c)
                 out.print(count + 1);
-            }
             else {
-                if (x < b) {
+                if (x < b)
                     out.print(count + 2);
-                }
                 else {
-                    if (x < a) {
+                    if (x < a)
                         out.print(count + 3);
-                    }
-                    else {
+                    else
                         out.print(count + 4);
-                    }
                 }
             }
-            }
-
-
-
-
-
-
+        }
     }
-
-            }
-
-
-
-
-
-
-    }
-
-    }
+}
 
 ```
 
