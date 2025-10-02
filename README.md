@@ -113,23 +113,23 @@ C, D друг от друга в указанном порядке. После �
 ```mermaid
 graph TD
     A([Начало]) --> B[/Ввести: x, d, c, b, a /]
-    B --> W[count=1]
+    B --> W[count=0]
     W --> C{x >= d}
     
-    C -- Нет --> D{count}
-    D -->Z([count])
+    C -- Нет --> D[count+1]
+    D -->Z[/count/]
     C -- Да --> I{x >= c}
-    I -- Нет --> J[count+1]
+    I -- Нет --> J[count+2]
     I -- Да --> K{x >= b}
-    K -- Нет --> P[count+2]
+    K -- Нет --> P[count+3]
     K -- Да --> S{x >= a}
-    S -- Нет --> T[count+3]
-    S -- Да --> F[count+4]
+    S -- Нет --> T[count+4]
+    S -- Да --> F[count+5]
     J --> Z
     P --> Z
     T --> Z
     F --> Z
-
+    Z --> H([Конец])
     
 
 ```
@@ -156,24 +156,26 @@ public class Main {
         int b= in.nextInt();
         int c= in.nextInt();
         int d= in.nextInt();
-        int count= 1;
+        int count= 0;
         if (x<d) {
-            out.print(count);}
+            count+=1;}
         else {
             if (x < c)
-                out.print(count + 1);
+                count+=2;
             else {
                 if (x < b)
-                    out.print(count + 2);
+                    count+=3;
                 else {
                     if (x < a)
-                        out.print(count + 3);
+                        count+=4;
                     else
-                        out.print(count + 4);
+                        count+=5;
                 }
             }
         }
+        out.println(count);
     }
+
 }
 
 ```
