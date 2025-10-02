@@ -140,6 +140,7 @@ graph TD
 
 ```java
 
+
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -159,17 +160,31 @@ public class Main {
         int count= 1;
         if (x<d) {
             out.print(count);}
-        else
-            if (x<c) {
-                out.print(count+1);}
-            else
-                if (x<b){
-                    out.print(count+2);}
-                else
-                    if  (x<a){
-                        out.print(count+3);}
-                    else
-                    {out.print(count+4);}
+        else {
+            if (x < c) {
+                out.print(count + 1);}
+            else {
+                if (x < b) {
+                    out.print(count + 2);
+                } else {
+                    if (x < a) {
+                        out.print(count + 3);
+                    } else {
+                        out.print(count + 4);
+                    }
+                }
+            }
+            }
+
+
+
+
+
+
+    }
+
+            }
+
 
 
 
