@@ -189,7 +189,7 @@ public class Main {
 
     - **Input**:
         ```
-        3 4
+        3 4 7 8 19
         ```
 
     - **Output**:
@@ -201,7 +201,7 @@ public class Main {
 
     - **Input**:
         ```
-        3 4 5
+        3 4 5 6 1 
         ```
 
     - **Output**:
@@ -213,7 +213,7 @@ public class Main {
 
     - **Input**:
         ```
-        3 4 5 6
+        3 4 5 1 2
         ```
 
     - **Output**:
@@ -225,7 +225,7 @@ public class Main {
 
     - **Input**:
         ```
-        1 2 3 4 5
+        5 6 4 3 2
         ```
 
     - **Output**:
@@ -237,7 +237,7 @@ public class Main {
 
     - **Input**:
         ```
-        1 2 3 4 5 
+        5 5 4 3 5
         ```
 
     - **Output**:
